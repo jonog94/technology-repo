@@ -1,17 +1,28 @@
-const Room = () => {
-    return (
-        <div className="min-h-screen bg-blue-500 flex flex-col p-6">
-            <div className="w-full bg-white rounded-lg shadow-md p-6">
-                <i className="fas fa-home"></i>
-                <i className="far fa-clock"></i>
-                <i className="fab fa-github"></i>
-            </div>
-            <div className="flex flex-grow mt-4">
-                <div className="w-3/5 bg-white rounded-lg shadow-md p-6 mr-2"></div>
-                <div className="w-2/5 bg-white rounded-lg shadow-md p-6 ml-2"></div>
-            </div>
-        </div>
-    );
-};
+import React from 'react'
+import Menu from '@src/components/whiteboard/Menu.tsx'
+import Share from '@src/components/whiteboard/Share.tsx'
+import ToolBox from '@src/components/whiteboard/ToolBox.tsx'
+import Whiteboard from '@src/components/whiteboard/Whiteboard.tsx'
+import CanvasBoard from '@src/components/whiteboard/CanvasBoard.tsx'
+import TopLayout from '@src/components/whiteboard/layout/TopLayout.tsx'
+import BottomLayout from '@src/components/whiteboard/layout/BottomLayout.tsx'
 
-export default Room;
+const Room: React.FC = () => {
+    return (
+        <Whiteboard>
+            <TopLayout>
+                <Menu />
+                <ToolBox />
+                <Share>
+                    <p>test</p>
+                </Share>
+            </TopLayout>
+            <CanvasBoard />
+            <BottomLayout>
+
+            </BottomLayout>
+        </Whiteboard>
+    )
+}
+
+export default Room
