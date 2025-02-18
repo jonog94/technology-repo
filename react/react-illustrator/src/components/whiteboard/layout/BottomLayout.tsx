@@ -1,4 +1,5 @@
 import React from 'react'
+import bottomLayoutStyle from '@src/styles/whiteboard/layout/BottomLayout.module.css'
 
 interface BottomLayoutProps {
     children?: React.ReactNode;
@@ -6,7 +7,7 @@ interface BottomLayoutProps {
 
 const BottomLayout: React.FC<BottomLayoutProps> = (props) => {
     return (
-        <div>
+        <div className={bottomLayoutStyle.bottomLayout}>
             {props.children}
         </div>
     )
