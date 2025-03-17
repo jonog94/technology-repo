@@ -1,7 +1,8 @@
+import React from 'react'
 import { Link } from 'react-router'
 import pencilLogo from '@src/assets/pencil-logo.png'
 
-const ForgotPassword = () => {
+const ForgotPassword: React.FC  = () => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
             <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">

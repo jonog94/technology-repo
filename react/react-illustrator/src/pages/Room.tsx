@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Help from '@src/components/whiteboard/Help.tsx'
 import Menu from '@src/components/whiteboard/Menu.tsx'
 import Zoom from '@src/components/whiteboard/Zoom.tsx'
@@ -12,13 +12,23 @@ import Whiteboard from '@src/components/whiteboard/Whiteboard.tsx'
 import CanvasBoard from '@src/components/whiteboard/CanvasBoard.tsx'
 import TopLayout from '@src/components/whiteboard/layout/TopLayout.tsx'
 import BottomLayout from '@src/components/whiteboard/layout/BottomLayout.tsx'
+import PortalHandler from '@src/components/whiteboard/portal/PortalHandler.tsx'
 
 const Room: React.FC = () => {
+    const [showMenuDropdown, setShowMenuDropdown] = useState(false)
+    const [showPalette, setShowPalette] = useState(false)
+
     return (
         <Whiteboard>
             <TopLayout>
-                <Menu />
-                <ToolBox />
+                <Menu
+                    showMenuDropdown={showMenuDropdown}
+                    setShowMenuDropdown={setShowMenuDropdown}
+                />
+                <ToolBox
+                    showPalette={showPalette}
+                    setShowPalette={setShowPalette}
+                />
                 <Share>
                     <Avatar />
                     <button type="button" className={shareStyle.btnShare}>
@@ -26,6 +36,7 @@ const Room: React.FC = () => {
                     </button>
                 </Share>
             </TopLayout>
+            <PortalHandler />
             <CanvasBoard/>
             <BottomLayout>
                 <Controls>

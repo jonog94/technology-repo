@@ -1,8 +1,5 @@
 import React from 'react'
-
-interface WhiteboardProps {
-    children?: React.ReactNode;
-}
+import { WhiteboardProps } from '@src/type/components/whiteboard/whiteboard.ts'
 
 const Whiteboard: React.FC<WhiteboardProps> = (props) => {
     return (

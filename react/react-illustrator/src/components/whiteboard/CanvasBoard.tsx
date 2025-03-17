@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, { useEffect, useRef } from 'react'
 import canvasStyle from '@src/styles/whiteboard/Canvas.module.css'
 
 const CanvasBoard: React.FC = () => {
