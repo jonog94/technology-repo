@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RectanglePalette: React.FC  = () => {
+const RectanglePalette: React.FC = () => {
     return null
 }
 

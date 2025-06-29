@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ArrowPalette: React.FC  = () => {
+const ArrowPalette: React.FC = () => {
     return null
 }
 

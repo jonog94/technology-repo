@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EllipsePalette: React.FC  = () => {
+const EllipsePalette: React.FC = () => {
     return null
 }
 

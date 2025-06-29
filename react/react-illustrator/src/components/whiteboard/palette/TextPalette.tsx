@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TextPalette: React.FC  = () => {
+const TextPalette: React.FC = () => {
     return null
 }
 

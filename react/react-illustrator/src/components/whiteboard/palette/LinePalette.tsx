@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LinePalette: React.FC  = () => {
+const LinePalette: React.FC = () => {
     return null
 }
 

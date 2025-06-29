@@ -1,6 +1,6 @@
 import React from 'react'
 import shareStyle from '@src/styles/whiteboard/Share.module.css'
-import { ShareProps } from '@src/type/components/whiteboard/share.ts'
+import { ShareProps } from '@src/types/components/whiteboard/share.ts'
 
 const Share: React.FC<ShareProps> = (props) => {
     return (

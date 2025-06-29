@@ -1,6 +1,6 @@
 import React from 'react'
 import menuStyle from '@src/styles/whiteboard/Menu.module.css'
-import { MenuProps } from '@src/type/components/whiteboard/menu.ts'
+import { MenuProps } from '@src/types/components/whiteboard/menu.ts'
 import MenuDropdownPortal from '@src/components/whiteboard/portal/MenuDropdownPortal.tsx'
 
 const Menu: React.FC<MenuProps> = ({ showMenuDropdown, setShowMenuDropdown }) => {

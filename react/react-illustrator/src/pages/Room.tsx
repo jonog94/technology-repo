@@ -16,7 +16,6 @@ import PortalHandler from '@src/components/whiteboard/portal/PortalHandler.tsx'
 
 const Room: React.FC = () => {
     const [showMenuDropdown, setShowMenuDropdown] = useState(false)
-    const [showPalette, setShowPalette] = useState(false)
 
     return (
         <Whiteboard>
@@ -25,10 +24,7 @@ const Room: React.FC = () => {
                     showMenuDropdown={showMenuDropdown}
                     setShowMenuDropdown={setShowMenuDropdown}
                 />
-                <ToolBox
-                    showPalette={showPalette}
-                    setShowPalette={setShowPalette}
-                />
+                <ToolBox />
                 <Share>
                     <Avatar />
                     <button type="button" className={shareStyle.btnShare}>

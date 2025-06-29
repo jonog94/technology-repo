@@ -1,6 +1,6 @@
 import React from 'react'
 import controlsStyle from '@src/styles/whiteboard/Controls.module.css'
-import { ControlsProps } from '@src/type/components/whiteboard/controls.ts'
+import { ControlsProps } from '@src/types/components/whiteboard/controls.ts'
 
 const Controls: React.FC<ControlsProps> = (props) => {
     return (
