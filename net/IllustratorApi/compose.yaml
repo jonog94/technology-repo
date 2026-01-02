@@ -1,6 +1,0 @@
-﻿services:
-  illustratorapi:
-    image: illustratorapi
-    build:
-      context: .
-      dockerfile: Dockerfile

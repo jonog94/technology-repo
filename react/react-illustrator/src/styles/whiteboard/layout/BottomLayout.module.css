@@ -1,8 +1,0 @@
-.bottomLayout {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px 20px 15px;
-}
