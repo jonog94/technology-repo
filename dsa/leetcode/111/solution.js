@@ -11,11 +11,24 @@
  * @return {number}
  */
 const minDepth = (root) => {
-    let minDepth = 0
+    let depths = []
 
-    const traverse = (node) => {
+    const traverse = (node, depth = 1) => {
         if (!node) return
 
+        traverse(node.left, depth + 1)
+        traverse(node.right, depth + 1)
 
+        if (!node.left && !node.right) {
+            depths = [...depths, depth]
+        }
+    }
+
+    traverse(root)
+
+    if (depths.length === 0) {
+        return 0
+    } else {
+        return Math.min(...depths)
     }
 }
